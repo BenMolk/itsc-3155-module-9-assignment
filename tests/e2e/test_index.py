@@ -1,5 +1,4 @@
 from flask.testing import FlaskClient
-#test_index.py
 
 
 def test_home_page(test_app: FlaskClient):
