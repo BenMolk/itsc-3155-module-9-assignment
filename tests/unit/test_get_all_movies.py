@@ -1,5 +1,5 @@
 # TODO: Feature 1
-#test_get_all_movies.py
+# Added by Ben Molk
 from src.repositories.movie_repository import get_movie_repository
 
 def test_get_all_movies():

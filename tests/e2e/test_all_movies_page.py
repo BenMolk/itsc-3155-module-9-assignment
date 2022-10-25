@@ -1,5 +1,5 @@
 # TODO: Feature 1
-# test_all_movies_page.py
+# Added by Ben Molk
 from flask.testing import FlaskClient
 from app import movie_repository
 
