@@ -1,6 +1,5 @@
 import pytest
 from app import app
-#conftest.py
 
 
 @pytest.fixture(scope='module')
