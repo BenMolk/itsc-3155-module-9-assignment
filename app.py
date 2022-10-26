@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 movie_repository = get_movie_repository()
 
-
 @app.get('/')
 def index():
     return render_template('index.html')
@@ -15,7 +14,9 @@ def index():
 @app.get('/movies')
 def list_all_movies():
     # TODO: Feature 1
-    return render_template('list_all_movies.html', list_movies_active=True)
+    # Added by Ben Molk
+    movie_list = movie_repository.get_all_movies()
+    return render_template('list_all_movies.html', list_movies_active=True, movie_list=movie_list)
 
 
 @app.get('/movies/new')
