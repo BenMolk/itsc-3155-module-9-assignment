@@ -6,4 +6,18 @@
 <h1 class="mb-5">Create Movie Rating</h1>
 <p class="mb-3">Create a movie rating below</p>
 <!-- TODO: Feature 2 -->
+<!--Jenny Stokoszynski-->
+<form action="/movies" method="post">
+   <div class="mb-3">
+    <label class="form-label" for="title">Title:</label>
+    <input class="form-control" type="text" name="title" id="title" autocomplete="off" required>
+
+    <label class="form-label" for="director">Director:</label>
+    <input class="form-control" type="text" name="director" id="director" autocomplete="off" required>
+
+    <label class="form-label" for="rating">Rating (1-5):</label>
+    <input class="form-control" type="number" name="rating" id="rating" autocomplete="off" required min="1" max="5">
+   </div> 
+   <button type="submit" class="butn btn-primary">Submit</button>
+</form>
 {% endblock %}
